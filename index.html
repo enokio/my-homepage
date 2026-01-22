@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>enokio's blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grain-overlay"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">enokio</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#posts">Posts</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="テーマ切り替え">
+          <span class="theme-icon sun">&#9788;</span>
+          <span class="theme-icon moon">&#9790;</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#posts">Posts</a>
+  </div>
+
+  <main class="main">
+    <section class="hero">
+      <p class="hero-greeting">ようこそ</p>
+      <h1 class="hero-title">思考の断片を<br>綴る場所</h1>
+      <p class="hero-description">
+        プログラミングと日々の学びを記録しています。
+      </p>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          はじめまして、enokioです。<br>
+          Web開発を学んでいる初心者です。<br>
+          このブログでは、学んだことや考えたことを記録していきます。
+        </p>
+      </div>
+    </section>
+
+    <section class="posts" id="posts">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Posts</h2>
+      </div>
+      <div class="posts-list">
+        <article class="post-card">
+          <time class="post-date">2026.01.22</time>
+          <h3 class="post-title">
+            <a href="posts/2026-01-22-first-post.html">はじめての投稿</a>
+          </h3>
+          <p class="post-excerpt">
+            ブログを始めました。これから学んだことを少しずつ記録していきます。
+          </p>
+          <a href="posts/2026-01-22-first-post.html" class="post-link">
+            続きを読む <span class="arrow">&rarr;</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 enokio. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
